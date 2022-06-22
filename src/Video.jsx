@@ -2,7 +2,7 @@ import { Composition } from 'remotion';
 import { TomorrowNeverComes } from './TomorrowNeverComes/TomorrowNeverComes';
 import { getSecondsInFrames } from './utils/utils'
 
-import { gradientColorsArray } from './utils/constants';
+import { bgGradientColors } from './utils/constants';
 
 export const RemotionVideo = () => {
 	const fps = 30;
@@ -24,7 +24,7 @@ export const RemotionVideo = () => {
 				height={1920}
 				width={1080}
 				defaultProps={{
-					gradient: gradientColorsArray,
+					gradient: bgGradientColors,
 					videoStart: videoStart,
 					videoEnd: videoEnd,
 				}}

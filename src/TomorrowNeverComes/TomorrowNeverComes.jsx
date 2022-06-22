@@ -3,14 +3,10 @@ import { StyledFill } from "../generics/StyledFill"
 import { videoStyle, bgGradientStyle } from "../../styles/style"
 import video from "./tomorrow-never-comes.mp4"
 
-import { bgGradientColors } from "../utils/constants"
-
 
 export const TomorrowNeverComes = ({ gradient, videoStart, videoEnd }) => {
   const frame = useCurrentFrame();
   const { durationInFrames, fps, width, height } = useVideoConfig();
-
-  const gradientStops = [0, durationInFrames * 0.25, durationInFrames * 0.5, durationInFrames * 0.75, durationInFrames]
   
   const gradientSpring = spring({
     frame: frame,
@@ -38,7 +34,7 @@ export const TomorrowNeverComes = ({ gradient, videoStart, videoEnd }) => {
 
   return (
     <>
-      <StyledFill bg={bgGradientColors} style={{ 
+      <StyledFill bg={gradient} style={{ 
         bgGradientStyle, 
         height: height * 5,
         width: width * 5,

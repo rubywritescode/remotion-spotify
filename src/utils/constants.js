@@ -16,7 +16,7 @@ export const bgGradientColors = `linear-gradient(to bottom right,
   rgba(44, 134, 219, 0.8) 50%,
   rgba(64, 194, 214, 0.6) 62%,
   rgba(64, 194, 214, 0.8) 70%,
-  rgba(160, 94, 255, 0.8) 82%,
+  rgba(160, 94, 255, 1) 82%,
   rgba(48, 144, 216, 0.8) 90%, 
   rgba(48, 144, 216, 1) 100%)
 `
